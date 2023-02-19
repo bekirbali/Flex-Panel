@@ -23,6 +23,8 @@ body .panels .panel {
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 body .panels .panel > *:first-child {
   transition: 0.4s cubic-bezier(0.25, 0.1, 0.34, -0.79);
@@ -34,12 +36,15 @@ body .panels .panel > *:last-child {
 }
 body .panels .panel p {
   padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.486);
+  color: white;
+  border-radius: 1rem;
 }
 body .panels .panel.active > *:first-child {
   transform: translateY(100%);
 }
 body .panels .panel.active > *:last-child {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 body .panels .panel.open {
   transition: 0.7s cubic-bezier(0.25, 0.1, 0.34, -0.79);

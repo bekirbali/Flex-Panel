@@ -128,6 +128,8 @@ body {
       align-items: center;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       overflow: hidden;
+      background-size: cover;
+      background-position: center;
 
       & > *:first-child {
         transition: 0.4s cubic-bezier(0.25, 0.1, 0.34, -0.79);
@@ -140,6 +142,9 @@ body {
 
       p {
         padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: white;
+        border-radius: 1rem;
       }
     }
     .panel.active > *:first-child {
@@ -147,7 +152,8 @@ body {
     }
 
     .panel.active > *:last-child {
-      transform: translateY(0);
+      transform: translateY(-100%);
+      // margin-bottom: 1rem;
     }
 
     .panel.open {
